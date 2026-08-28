@@ -1,0 +1,5 @@
+voltage = float(input("enter voltage reading : "))
+if voltage > 12:
+    print ("GOOD")
+else:
+    print("LOW")
