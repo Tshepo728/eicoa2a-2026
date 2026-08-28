@@ -1,21 +1,26 @@
 from ohms_law import calc_resistance ,calc_power
 from unit_converter import inches_to_mm ,mm_to_inches ,cm_to_inches ,inches_to_cm
 
-def display_menu():
+def build_menu():
     """
-    print a numbered menu of engineering calculations.
+    Build and return the engineering calculator options
+    """
+    options = ["Calculate Resistance",
+               "Convert Length",
+               "Calculate Power",
+               "Exit"
+               ]
+    return options
 
-    the menu includes:
-    1.calculate resistane 
-    2.convert length 
-    3.calculate power
-    4.Exit
-    """
-    print("\n---engineering calculator---")
-    print("1.calculate resistance")
-    print("2.convert length ")
-    print("3.calculate power")
-    print("4.Exit")
+
+def display_menu():
+    print("\n---engineering Calculator---")
+
+    options = build_menu()
+
+    for number ,option in enumerate(options ,start = 1):
+        print(number , option)
+
 
 def main():
     running = True
