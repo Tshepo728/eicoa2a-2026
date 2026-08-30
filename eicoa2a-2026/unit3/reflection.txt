@@ -1,0 +1,24 @@
+#question 1:functions helped me to organise program into different parts.
+            Each function does a specific job,like calculating resistance,
+            power or converting units.This made my calculator easier to understand
+            and change.
+
+#question 2:Parameters are used to give information to a function when we call it.
+            A return value gives the answer from the function back to the program.
+            I used parameters like voltage,resistance and measurements in my calculator
+            functions,and i used return values to get the calculated results.
+
+#question 3:Docstrings are important because they explain what a functiion does.
+            They help me and the other programmers understand the code more easily.
+            They can also explain what information the function needs what results it gives.
+
+#question 4:one problem i had was getting errors in my code when i was testing my program.
+            i checked the code and tested the functions to find where the problem was.i 
+            fixed the errors and ran the program again to make sure everything was working
+            correctly.That helped me understand why testing and debugging are important.
+
+#question 5:Git hellps programmers keep track of the changes made to their programs,
+            at first i did not understand how commits worked,and i made some mistakes
+             when i was commiting my work.After using git more and seeing what the commits were 
+             doing ,i started to understand it better .the git commit command is most useful cause it 
+             saves versions of my work.    
