@@ -13,3 +13,5 @@ if __name__=="__main__":
     time = float(input("enter time in seconds"))
     results = volume / time
     print(f"flowrate = {results :.2f}")
+    print("\n---flow rate documentation---")
+    print(calc_flow_rate. __doc__)
