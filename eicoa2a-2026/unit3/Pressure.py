@@ -1,4 +1,4 @@
-def calc_pressurec(force , Area):
+def calc_pressure(force , Area):
     """
     Calculate pressure exerted on a hydraulic piston head
 
@@ -9,7 +9,11 @@ def calc_pressurec(force , Area):
     returns:
         float:Pressure exerted on a hydraulic piston         
     """
-    force =float(input("enter force(N)"))
-    Area = float(input("enter area(m**2)"))
+
     return force / Area
-    
+
+if __name__=="__main__":
+    force = float(input("enter force(N): "))
+    Area = float(input("enter area(m**2): "))
+    Pressure = calc_pressure(force ,Area)
+    print("Pressure = ",Pressure ,"Pa")
