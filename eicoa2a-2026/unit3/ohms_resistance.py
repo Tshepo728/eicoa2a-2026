@@ -15,7 +15,7 @@ def calc_resistance(voltage ,current):
         return resistance 
 
 
-if __name__=="__main___":
+if __name__=="__main__":
     voltage = float(input("enter voltage(V): "))
     current = float(input("enter current(A): "))
     resistance = calc_resistance(voltage ,current)
