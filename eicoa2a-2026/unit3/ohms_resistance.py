@@ -19,4 +19,4 @@ if __name__=="__main__":
     voltage = float(input("enter voltage(V): "))
     current = float(input("enter current(A): "))
     resistance = calc_resistance(voltage ,current)
-    print("Resistance",resistance ,"ohms")
+    print("Resistance",round(resistance,2) ,"ohms")
