@@ -8,3 +8,15 @@ def calc_resistance(voltage ,current):
     Returns:
         float: resistance in ohms
     """
+    if current == 0:
+        return 0.0
+    else:
+        resistance = voltage / current 
+        return resistance 
+
+
+if __name__=="__main___":
+    voltage = float(input("enter voltage(V): "))
+    current = float(input("enter current(A): "))
+    resistance = calc_resistance(voltage ,current)
+    print("Resistance",resistance ,"ohms")
