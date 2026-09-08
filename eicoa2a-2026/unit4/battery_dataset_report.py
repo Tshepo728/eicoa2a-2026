@@ -9,12 +9,23 @@ print("lowest voltage:", voltages[3])
 
 for voltage in voltages:
     if voltage >= 12.5:
-        status:"good"
+        status = "good"
         good += 1
     elif voltage >= 11.5:
-        status:"marginal"
+        status = "marginal"
         marginal += 1
     else:
-        status :"low"
+        status ="low"
         low += 1
         low_readings.append(voltage)
+
+        print(voltage , status)
+
+total = sum(voltages)
+Average = total / len(voltages)
+print("total voltages:", total)
+print("Total voltage:", total)
+print("good readings:", good)
+print("marginal readings:", marginal)
+print("low readings:", low)
+print("all low readings:", low_readings)
