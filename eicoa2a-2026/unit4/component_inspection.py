@@ -15,9 +15,18 @@ voltage_tolerance = (4.9 ,5.10)
 
 random.seed(42)
 selected_ids = random.sample(list(component.keys()),4)
-minimum__voltage ,maximum_voltage = voltage_tolerance
+minimum_voltage ,maximum_voltage = voltage_tolerance
 inspection_rows = []
 failed_components = set()
 
-
+PASS = 0
+FAIL = 0
+for component_id in selected_ids:
+    voltage = component[component_id]
+    if minimum_voltage < voltage < maximum_voltage:
+        PASS += 1
+        inspection_rows.append([component_id, voltage, "Pass"])
+    else:
+        FAIL += 1
+        inspection_rows.append([component_id, voltage, "Fail"])
 
