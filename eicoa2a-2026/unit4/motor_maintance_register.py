@@ -25,7 +25,13 @@ print("motor maintanance register")
 print(motors["M-102"])
 motors["M-102"]["status"] = "overheat"
 print(motors["M-102"])
-
+for motor_id,motor in motors.items():
+    print(motor_id,motor["location"],
+          motor["rated_power"],
+          motor["temperature"],
+          motor["status"],
+          motor["faults"]
+    )
 
 
 
