@@ -30,3 +30,9 @@ for component_id in selected_ids:
         FAIL += 1
         inspection_rows.append([component_id, voltage, "Fail"])
 
+print("\nComponent Inspection Results")
+print(tabulate(inspection_rows,headers=["Component ID",
+                                         "Voltage (V)", "Result"],
+        tablefmt="grid")
+)
+
