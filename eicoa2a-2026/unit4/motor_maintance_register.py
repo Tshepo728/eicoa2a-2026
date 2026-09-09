@@ -36,7 +36,17 @@ for motor_id,motor in motors.items():
     
     if motor["temperature"] > 85:
         Above_85 += 1
-    print("motors above 85 degree celsius are :",Above_85)
+        print("Motor above 85 degree celcius:",Above_85)
+
+unique_faults = set()
+for motor in motors.values():
+    unique_faults.update(motor["faults"])
+
+print("Unique faults:", unique_faults)
+print("number of unique faults: ", len(unique_faults))    
+        
+
+
     
 
 
