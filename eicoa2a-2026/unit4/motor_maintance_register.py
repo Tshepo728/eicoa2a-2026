@@ -1,3 +1,4 @@
+Above_85 = 0
 motors = {
     "M-101": {
         "location": "Workshop A",
@@ -32,6 +33,15 @@ for motor_id,motor in motors.items():
           motor["status"],
           motor["faults"]
     )
+    
+    if motor["temperature"] > 85:
+        Above_85 += 1
+    print("motors above 85 degree celsius are :",Above_85)
+    
+
+
+
+
 
 
 
