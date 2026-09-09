@@ -15,4 +15,9 @@ voltage_tolerance = (4.9 ,5.10)
 
 random.seed(42)
 selected_ids = random.sample(list(component.keys()),4)
+minimum__voltage ,maximum_voltage = voltage_tolerance
+inspection_rows = []
+failed_components = set()
+
+
 
