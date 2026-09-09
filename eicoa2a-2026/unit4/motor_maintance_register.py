@@ -23,6 +23,9 @@ motors = {
 }
 print("motor maintanance register")
 print(motors["M-102"])
+motors["M-102"]["status"] = "overheat"
+print(motors["M-102"])
+
 
 
 
