@@ -1,3 +1,6 @@
+import random
+from tabulate import tabulate
+
 component = { "ECU-101": 4.96,
                "ECU-102": 5.08,
                "ECU-103": 4.88,
@@ -7,3 +10,9 @@ component = { "ECU-101": 4.96,
                "ECU-107": 4.91, 
                "ECU-108": 5.05 
 }
+
+voltage_tolerance = (4.9 ,5.10)
+
+random.seed(42)
+selected_ids = random.sample(list(component.keys()),4)
+
