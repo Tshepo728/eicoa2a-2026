@@ -36,3 +36,12 @@ print(tabulate(inspection_rows,headers=["Component ID",
         tablefmt="grid")
 )
 
+total_voltage = sum(row[1] for row in inspection_rows)
+average_voltage = total_voltage / len(inspection_rows)
+
+print(f"\nAverage voltage: {average_voltage:.2f} V")
+print(f"PASS count: {PASS}")
+print(f"FAIL count: {FAIL}")
+
+print(f"Failed components: {failed_components}")
+
