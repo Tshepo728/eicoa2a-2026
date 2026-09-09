@@ -21,6 +21,14 @@ motors = {
         "faults":["F01","F04"]
     }
 }
+print("motor maintanance register")
+print(motors["M-102"])
 
+
+
+    
+          
+
+      
 
 
