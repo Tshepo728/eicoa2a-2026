@@ -45,8 +45,9 @@ for motor in motors.values():
 print("Unique faults:", unique_faults)
 print("number of unique faults: ", len(unique_faults))    
         
-
-
+#Dictionary : stores each motor's information, including location, rated power, temperature, status, and faults.
+#Lists : stores the faults for each motor.
+#Sets: stores the unique codes of faults across all motors.
     
 
 
