@@ -1,2 +1,5 @@
 with open("machine_log.txt", "r") as file:
-    print("File opened successfully.")
+    for line in file:
+        cleaned_line = line.strip()
+
+
