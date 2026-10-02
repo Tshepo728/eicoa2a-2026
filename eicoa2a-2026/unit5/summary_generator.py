@@ -4,4 +4,6 @@ total = 0
 count = 0
 
 with open("weights.txt", "r") as file:
-    print("file successfully opened...")
+    for line in file:
+        cleaned_line = line.strip()
+        print(cleaned_line)
