@@ -1,0 +1,3 @@
+Total weight: 5.5
+valid entries: 3
+Average weight: 0.55
